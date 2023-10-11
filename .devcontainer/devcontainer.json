@@ -26,6 +26,9 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+    //
+	// Uncomment below because CodeSpaces default changed to close forwarded ports for better security
+	// See https://aka.ms/vscode-port-forwarding-changes for details
 	"forwardPorts": [3000, 27017],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
