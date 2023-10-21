@@ -8,6 +8,9 @@ jobs:
     # Checkout code
     - uses: actions/checkout@main
 
+    # Check Azure CLI version
+    - run: az --version
+
     # Log into Azure
     - uses: azure/login@v1
       with:
