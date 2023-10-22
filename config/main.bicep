@@ -146,7 +146,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
           ]
           resources: {
             // 'containerapps' 'cpu' expects 'int | null' #5993
-            // https://github.com/Azure/bicep/issues/5993
+            // https://github.com/Azure/bicep/issues/5993#issuecomment-1043170716
             cpu: json('0.5')
             memory: '1.0Gi'
           }
