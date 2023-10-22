@@ -152,7 +152,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
                but the provided value is of type "'0.5'". If this is an inaccuracy in the documentation,
                please report it to the Bicep Team. [https://aka.ms/bicep-type-issues]
             */
-            cpu: '1'
+            cpu: 1
             memory: '1.0Gi'
           }
         }
