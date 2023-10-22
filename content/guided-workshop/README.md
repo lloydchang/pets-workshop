@@ -49,5 +49,5 @@ If you wish, you can also close out your DevOps learning journey by deploying to
 
 > **NOTE:** When deploying to a cloud environment, some charges may be incurred. For this workshop, when deploying to Azure and deleting the resources upon completion of the exercises, the charge should be less than $6 US.
 
-7. [Add automation](exercises/7-automation.md) to create a deployment environment
+7. [Add automation](exercises/7-create-environment.md) to create a deployment environment
 8. [Deploy your project](exercises/8-deployment.md) to publish your project to the cloud
