@@ -145,14 +145,9 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
             }
           ]
           resources: {
-            /*
-               Fix the following error by changing 0.5 to 1
-               Error: WARNING: /home/runner/work/pets-workshop/pets-workshop/config/main.bicep(148,18) :
-               Warning BCP036: The property "cpu" expected a value of type "int | null"
-               but the provided value is of type "'0.5'". If this is an inaccuracy in the documentation,
-               please report it to the Bicep Team. [https://aka.ms/bicep-type-issues]
-            */
-            cpu: 1
+            // 'containerapps' 'cpu' expects 'int | null' #5993
+            // https://github.com/Azure/bicep/issues/5993
+            cpu: json('0.5')
             memory: '1.0Gi'
           }
         }
