@@ -148,13 +148,13 @@ You've now configured Azure and added secrets & variables to your repository. Yo
 
         # Log into Azure
         - uses: azure/login@v1
-            with:
+          with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
         # Deploy Bicep file
         - name: create resources
-            uses: azure/arm-deploy@v1
-            with:
+          uses: azure/arm-deploy@v1
+          with:
             subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
             resourceGroupName: ${{ vars.AZURE_RG }}
             template: ${{ github.workspace }}/config/main.bicep
