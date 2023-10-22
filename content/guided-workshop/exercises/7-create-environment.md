@@ -139,7 +139,7 @@ You've now configured Azure and added secrets & variables to your repository. Yo
     name: Create Azure resources
     on: [workflow_dispatch]
     jobs:
-    build-and-deploy:
+      build-and-deploy:
         runs-on: ubuntu-latest
         steps:
 
